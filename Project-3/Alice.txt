@@ -1,0 +1,7 @@
+First, it creates a new thread – let’s call it the writing thread. Refer to the server code of
+project 2 for how to create a new thread with new Handler(...).start(). This thread will
+take a port number from the keyboard and then connects to that port number. After the
+connection (socket) is successfully established, it goes into a loop of reading a message
+from the keyboard and writing the message to the connection (socket). If the message
+is ”transfer filename”, after the message is written, the file is transmitted through the
+connection.

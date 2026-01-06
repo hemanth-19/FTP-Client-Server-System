@@ -1,0 +1,7 @@
+Next, it creates a ServerSocket, prints out the port number used, and listens on the
+socket for new connection (i.e. the accept method). When a new connection from
+another user arrives, the connection Socket is established. The main thread will become
+the so-called reading thread by listening to the connection socket. (Here, it resembles
+the server code of project 1, instead of project 2). This thread will attempt to read
+messages from the connection socket and print the messages on the screen. If the
+message is “transfer filename”, it reads the file and stores locally.
